@@ -10,7 +10,7 @@
 </parent>
     <groupId>com.kr</groupId>
     <artifactId>YKR-dependencies</artifactId>
-    <version>1.0.0-SNAPAHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
 
@@ -231,7 +231,7 @@
             <enabled>true</enabled>
         </releases>
         <snapshots>
-            <enabled>false</enabled>
+            <enabled>true</enabled>
         </snapshots>
     </repository>
 
