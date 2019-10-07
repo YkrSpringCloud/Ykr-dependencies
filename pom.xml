@@ -231,11 +231,9 @@
             <enabled>true</enabled>
         </releases>
         <snapshots>
-            <enabled>true</enabled>
+            <enabled>false</enabled>
         </snapshots>
     </repository>
-
-
             <repository>
                 <id>sonatype-repos</id>
                 <name>Sonatype Repository</name>
