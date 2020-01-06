@@ -220,7 +220,7 @@
         </resources>
     </build>
     <!--配置部署服务的nexus节点-->
-    <distributionManagement>
+<!--    <distributionManagement>
         <repository>
             <id>nexus-releases</id>
             <name>Nexus Release Repository</name>
@@ -231,7 +231,7 @@
             <name>Nexus Snapshot Repository</name>
             <url>http://192.168.154.129:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
-    </distributionManagement>
+    </distributionManagement>-->
 
 
 
