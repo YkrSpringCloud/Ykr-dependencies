@@ -28,6 +28,7 @@
         <zipkin.version>2.10.1</zipkin.version>
         <spring-boot-alibaba-druid.version>1.1.10</spring-boot-alibaba-druid.version>
         <spring-boot-mapper.version>2.0.2</spring-boot-mapper.version>
+        <nekohtml.version>1.9.22</nekohtml.version>
      <!--   <spring-cloud.version>Greenwich.RC</spring-cloud.version>-->
         <spring-boot-pagehelper.version>1.2.5</spring-boot-pagehelper.version>
         <mysql.version>5.1.46</mysql.version>
@@ -68,12 +69,12 @@
                 <artifactId>mapper-spring-boot-starter</artifactId>
                 <version>${spring-boot-mapper.version}</version>
             </dependency>
-            <dependency>
-                <groupId>mysql</groupId>
-                <artifactId>mysql-connector-java</artifactId>
-                <version>${mysql.version}</version>
-                <scope>runtime</scope>
-            </dependency>
+            <!--<dependency>-->
+                <!--<groupId>mysql</groupId>-->
+                <!--<artifactId>mysql-connector-java</artifactId>-->
+                <!--<version>${mysql.version}</version>-->
+                <!--<scope>runtime</scope>-->
+            <!--</dependency>-->
 
 
 
@@ -96,6 +97,12 @@
                 <version>${spring-boot-admin.version}</version>
             </dependency>
 
+            <!--解决thymeleaf模板引擎一定要执行严格的html5的格式校验问题-->
+            <dependency>
+                <groupId>net.sourceforge.nekohtml</groupId>
+                <artifactId>nekohtml</artifactId>
+                <version>${nekohtml.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -237,17 +244,17 @@
 
 <repositories>
 <!--增加nexus私服-->
-    <repository>
-        <id>nexus</id>
-        <name>Nexus Repository</name>
-        <url>http://192.168.154.129:8081/repository/maven-public/</url>
-        <snapshots><!--快照-->
-            <enabled>true</enabled>
-        </snapshots>
-        <releases>
-            <enabled>true</enabled>
-        </releases>
-    </repository>
+    <!--<repository>-->
+        <!--<id>nexus</id>-->
+        <!--<name>Nexus Repository</name>-->
+        <!--<url>http://192.168.154.129:8081/repository/maven-public/</url>-->
+        <!--<snapshots>&lt;!&ndash;快照&ndash;&gt;-->
+            <!--<enabled>true</enabled>-->
+        <!--</snapshots>-->
+        <!--<releases>-->
+            <!--<enabled>true</enabled>-->
+        <!--</releases>-->
+    <!--</repository>-->
 
 
             <repository>
